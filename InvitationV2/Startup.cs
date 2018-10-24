@@ -22,6 +22,7 @@ namespace InvitationV2
         {
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseNodeModules(env);
         }
     }
 }
