@@ -1,2 +1,97 @@
-﻿body {
+﻿.title {
+    display: flex;
+    justify-content: center;
+    color: goldenrod;
+    font-family: 'Harry P';
+    font-size: 3vw;
 }
+
+body {
+    background-color: black;
+}
+
+/*Photos at the top*/
+
+.wedding-photos {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+    .wedding-photos > img {
+        justify-content: space-between;
+        border: silver solid;
+        height: 33%;
+        width: 33%;
+    }
+
+/*Details*/
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.FirstRow {
+    flex-direction: row;
+    flex-grow: 1;
+    text-align: center;
+    color: goldenrod;
+    padding: 5px;
+    font-family: 'Harry P';
+    font-size: 5vw;
+}
+
+.SecondRow {
+    flex-direction: row;
+    flex-grow: 1;
+    text-align: center;
+    width: 33%;
+    color: white;
+    font-size: 2vw;
+    font-family: 'Palatino Linotype';
+    padding: 3px 5px;
+}
+
+
+
+
+.OurStory {
+    flex-direction:row;
+    color: goldenrod; 
+    font-family: 'Harry P';
+    text-align: center;
+    font-size: 4vw;
+   
+}
+
+
+/*.column {
+    float: left;
+    width: 33%;
+    border: 1px solid lightgrey;
+    margin-bottom: 25px;
+}*/
+
+
+
+
+
+
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    /*display: table;*/
+}
+
+/* Our Story*/
+
+
+
+
+
+
+
+

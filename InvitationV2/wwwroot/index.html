@@ -3,39 +3,102 @@
 <head>
     <meta charset="utf-8" />
     <title>The Wedding of Artem and Melodie</title>
-    <link href="wwwroot/css/site.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Melodie and Artem's wedding</h1>
+    <div class="title">
+        <h1>The Wedding of Mel and Art</h1>
+    </div>
 
-    <div>
-        <img src="/img/photo1.jpg" />
-        <h3>2nd March 2019</h3>
-        <ul>
-            <li>testing list item1</li>
-            <li>testing list item2</li>
-        </ul>
+    <!--Photos-->
+    <div class="wedding-photos">
+        <img src="/img/one.jpg">
+        <img src="/img/two.jpg">
+        <img src="/img/three.jpg">
+    </div>
+
+    <br />
+    <!--What, Where, Time-->
+
+    <div class="details">
+        <div class="FirstRow">What</div>
+        <div class="FirstRow">Where</div>
+        <div class="FirstRow">Time</div>
+        </div>
+
+    <br />  
+
+    <div class="details">
+        <div class="SecondRow">The wedding of Artem Igorevich Shkumat and Melodie Laura Joseph</div>
+        <div class="SecondRow">Cathedral of St. Patrick and St.Joseph <br /> 43 Wyndham Street, Auckland</div>
+        <div class="SecondRow">4:00pm on the 2nd of March, 2019</div>
+    </div>
+
+    <!--Our Story-->
+
+    <div class="OurStory">
+        <h1>Our Story</h1>
     </div>
 
 
-    <form>
-        <label>Your name</label>
-        <br/>
-        <input/>
-        <br/>
-        <label>Email</label>
-        <br/>
-        <input type="Email"/>
-        <br/>
-        <label>Message:</label>
-        <br/>
-        <textarea rows="4"></textarea>
-        <br/>
-        <input type="submit" value="Send RSVP"/>
-    </form>
+
+    <!-- Counter -->
+    <!--<section class="counter">
+        <div class="container">
+            <div class="row text-center individual">
+                <div class="col-3 wow tada">
+                    <img src="/img/gryffindor-shield.jpg">
+                    <h1 id="days"></h1>
+                    <h5>Days</h5>
+                </div>
+                <div class="col-3 wow tada">
+                    <img src="/img/Slytherin.jpg">
+                    <h1 id="hours"></h1>
+                    <h5>Hours</h5>
+                </div>
+                <div class="col-3 wow tada">
+                    <img src="/img/Hufflepuff.jpg">
+                    <h1 id="minutes"></h1>
+                    <h5>Minutes</h5>
+                </div>
+                <div class="col-3 wow tada">
+                    <img src="/img/Ravenclaw.jpg">
+                    <h1 id="seconds"></h1>
+                    <h5>Seconds</h5>
+                </div>
+            </div>
+            <div class="row text-center allInOne">
+                <div class="col-12 wow tada">
+                    <img src="/img/count-number-bg.png">
+                    <h1 id="all"></h1>
+                    <h5>D : H : M : S</h5>
+                </div>
+            </div>
+        </div>-->
+    <!--</section>-->
+
+
+    <div id="theForm">
+        <form>
+            <label>Your name</label>
+            <br />
+            <input />
+            <br />
+            <label>Email</label>
+            <br />
+            <input type="Email" />
+            <br />
+            <label>Message:</label>
+            <br />
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send RSVP" />
+        </form>
+    </div>
 
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="wwwroot/js/index.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>
