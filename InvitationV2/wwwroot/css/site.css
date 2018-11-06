@@ -3,7 +3,8 @@
     justify-content: center;
     color: goldenrod;
     font-family: 'Harry P';
-    font-size: 3vw;
+    font-size: 5vw;
+    padding: 12px 8px;
 }
 
 body {
@@ -37,7 +38,7 @@ body {
     flex-grow: 1;
     text-align: center;
     color: goldenrod;
-    padding: 5px;
+    padding: 8px;
     font-family: 'Harry P';
     font-size: 5vw;
 }
@@ -53,17 +54,25 @@ body {
     padding: 3px 5px;
 }
 
-
-
-
 .OurStory {
     flex-direction:row;
     color: goldenrod; 
     font-family: 'Harry P';
     text-align: center;
-    font-size: 4vw;
-   
+    font-size: 6vw;
+    padding: 8px;
 }
+
+.Quote {
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    padding: 8px;
+}
+
 
 
 /*.column {
