@@ -3,12 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <title>The Wedding of Artem and Melodie</title>
-    <link href="css/site.css" rel="stylesheet" />
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link href="css/site.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="title">The Wedding of Mel and Art</div>
-    <br />  
+<body data-spy="scroll" data-target=".navbar" data-offset="56">
+    <br />
+    <div class="title">The Honour of your Presence is Requested at</div>
+    <div class="title">the Wedding of Mel and Art</div>
+    <br />
 
     <!--Photos-->
     <div class="wedding-photos">
@@ -24,9 +30,9 @@
         <div class="FirstRow">What</div>
         <div class="FirstRow">Where</div>
         <div class="FirstRow">Time</div>
-        </div>
+    </div>
 
-    <br />  
+    <br />
 
     <div class="details">
         <div class="SecondRow">The wedding of Artem Igorevich Shkumat and Melodie Laura Joseph</div>
@@ -42,69 +48,105 @@
     <div class="OurStory">Our Story</div>
 
     <div class="Quote">
-        "Differences of habit and language are nothing at all if our aims are identical and our hearts are open."
-        Where your treasure is, there will your heart be also"
+        "Where your treasure is, there will your heart be also."
         — Albus Dumbledore
     </div>
 
+    <div class="Story">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
 
+    <br />
+
+    <div class="Countdown">The Countdown has begun...</div>
 
     <!-- Counter -->
-    <!--<section class="counter">
+    <section class="counter">
         <div class="container">
             <div class="row text-center individual">
                 <div class="col-3 wow tada">
                     <img src="/img/gryffindor-shield.jpg">
+                    <br />
                     <h1 id="days"></h1>
                     <h5>Days</h5>
                 </div>
                 <div class="col-3 wow tada">
                     <img src="/img/Slytherin.jpg">
+                    <br />
                     <h1 id="hours"></h1>
                     <h5>Hours</h5>
                 </div>
                 <div class="col-3 wow tada">
                     <img src="/img/Hufflepuff.jpg">
+                    <br />
                     <h1 id="minutes"></h1>
                     <h5>Minutes</h5>
                 </div>
                 <div class="col-3 wow tada">
                     <img src="/img/Ravenclaw.jpg">
+                    <br />
                     <h1 id="seconds"></h1>
                     <h5>Seconds</h5>
                 </div>
             </div>
             <div class="row text-center allInOne">
                 <div class="col-12 wow tada">
-                    <img src="/img/count-number-bg.png">
+                    <img src="img/count-number-bg.png">
                     <h1 id="all"></h1>
                     <h5>D : H : M : S</h5>
                 </div>
             </div>
-        </div>-->
-    <!--</section>-->
+        </div>
+    </section>
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            var location = { lat: -36.846408, lng: 174.763178 };
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 18,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+
+    <!--RSVP Form-->
 
     <div id="theForm">
         <form>
-            <label>Your name</label>
+            <label>Names of those attending: </label>
             <br />
             <input />
             <br />
-            <label>Email</label>
+            <label>Email: </label> 
             <br />
-            <input type="Email" />
+            <input type="email" />
             <br />
-            <label>Message:</label>
+            <label>Dietary Requirements: </label>
             <br />
             <textarea rows="4"></textarea>
             <br />
-            <input type="submit" value="Send RSVP" />
+            <input type="submit" value="SEND RSVP"/>
         </form>
     </div>
 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQOJjmyCDydO4wIBUeDcSrjsjHBDHm2-c&callback=initMap"></script>
 
 </body>
 </html>

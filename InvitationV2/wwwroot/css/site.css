@@ -3,11 +3,14 @@
     justify-content: center;
     color: goldenrod;
     font-family: 'Harry P';
-    font-size: 5vw;
+    font-size: 6vw;
     padding: 12px 8px;
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    position: relative;
     background-color: black;
 }
 
@@ -34,13 +37,14 @@ body {
 }
 
 .FirstRow {
+    cursor: pointer;
     flex-direction: row;
     flex-grow: 1;
     text-align: center;
     color: goldenrod;
     padding: 8px;
     font-family: 'Harry P';
-    font-size: 5vw;
+    font-size: 6vw;
 }
 
 .SecondRow {
@@ -49,18 +53,20 @@ body {
     text-align: center;
     width: 33%;
     color: white;
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-family: 'Palatino Linotype';
     padding: 3px 5px;
 }
+/*Our Story*/
 
-.OurStory {
-    flex-direction:row;
-    color: goldenrod; 
+.OurStory, .Countdown {
+
+    flex-direction: row;
+    color: goldenrod;
     font-family: 'Harry P';
     text-align: center;
     font-size: 6vw;
-    padding: 8px;
+
 }
 
 .Quote {
@@ -73,34 +79,131 @@ body {
     padding: 8px;
 }
 
-
-
-/*.column {
-    float: left;
-    width: 33%;
-    border: 1px solid lightgrey;
-    margin-bottom: 25px;
-}*/
-
-
-
-
-
-
-
-/* Clearfix (clear floats) */
-.row::after {
-    content: "";
-    clear: both;
-    /*display: table;*/
+.Story {
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Palatino Linotype';
+    padding: 8px 5px;
 }
 
-/* Our Story*/
+
+/*Counter*/
+
+section.counter {
+    background-image: url('../images/counter-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 300px;
+   
+}
+
+    section.counter h1 {
+        font-family: 'Harry P';
+        position: absolute;
+        color: gold;
+        bottom: -35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        font-size: 3vw;
+        padding: 10px;
+    }
+
+    section.counter h5 {
+        font-family: 'Harry P';
+        position: absolute;
+        color: gold;
+        bottom: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3vw;
+
+    }
+
+    section.counter img {
+        height: 100%;
+        padding: 10px;
+    }
+
+    section.counter .individual {
+        opacity: 1;
+    }
+
+    section.counter .allInOne {
+        display: none
+    }
+
+@media (max-width: 991px) and (min-width: 768px) {
+    section.counter img {
+        width: 95%;
+    }
+
+    section.counter h1 {
+        font-size: 3vw;
+    }
+
+    section.counter h5 {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 767px) {
+    section.counter .individual {
+        opacity: 0
+    }
+
+    section.counter .allInOne {
+        display: block
+    }
+
+    section.counter h1 {
+        top: 45%;
+    }
+
+    section.counter h5 {
+        top: 60%;
+    }
+
+    section.counter img {
+        width: 100%;
+    }
+}
+
+/*Map*/
+
+#map {
+    height: 400px;
+    width: 100%;
+    border: 25px solid black;
+}
 
 
+/*RSVP Form*/
 
 
+#theForm {
+    display: flex;
+    font-family: 'Palatino Linotype';
+    padding: 10px;
+}
+input[type=submit] {
+    width: 200px;
+    background-color: goldenrod;
+    color: white;
+    font-family: 'Harry P';
+}
+
+input, textarea {
+    font-size: 18px;
+    width: 200px;
+}
 
 
-
+label {
+    font-size: 16px;
+    color: goldenrod;
+}
 
