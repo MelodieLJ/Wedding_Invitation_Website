@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using InvitationV2.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,9 @@ namespace InvitationV2.Controllers
             return View();
         }
 
+        //when the browser needs to send us back info it does that in the form of a post
         [HttpPost]
-        public IActionResult Index(object model)
+        public IActionResult Index(IndexViewModel model)
         {
             return View();
         }
