@@ -1,14 +1,8 @@
 ﻿@model IndexViewModel
-@{
+{
     ViewBag.Title = "The Wedding of Artem and Melodie";
 }
 
-
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-<link href="~/css/site.css" rel="stylesheet">
-
->
 <br />
 <div class="title">The Honour of your Presence is Requested at</div>
 <div class="title">the Wedding of Mel and Art</div>
@@ -119,22 +113,21 @@
 
 <!--RSVP Form-->
 
-<div id="theForm">
-    <form method="post">
-        <label>Names of those attending: </label>
-        <br />
-        <input name="name" />
-        <br />
-        <label>Email: </label>
-        <br />
-        <input type="email" name="email" />
-        <br />
-        <label>Dietary Requirements: </label>
-        <br />
-        <textarea rows="4" name="message"></textarea>
-        <br />
-        <input type="submit" value="SEND RSVP" />
-    </form>
-    </div>
+<form method="post">
+    <label>Names of those attending: </label>
+    <br />
+    <input name="name" />
+    <br />
+    <label>Email: </label>
+    <br />
+    <input type="email" name="email" />
+    <br />
+    <label>Dietary Requirements: </label>
+    <br />
+    <textarea rows="4" name="message"></textarea>
+    <br />
+    <input type="submit" value="SEND RSVP" />
+</form>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
