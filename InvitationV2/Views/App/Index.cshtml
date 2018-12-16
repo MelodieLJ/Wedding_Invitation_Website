@@ -112,22 +112,26 @@
 </script>
 
 <!--RSVP Form-->
-
+@section Scripts {
+<script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
 <form method="post">
-    <label>Names of those attending: </label>
+    <div asp-validation-summary="ModelOnly"></div>
+    <label asp-for="Name">Names of those attending: </label>
     <br />
-    <input name="name" />
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
     <br />
-    <label>Email: </label>
+    <label asp-for="Email">Email: </label>
     <br />
-    <input type="email" name="email" />
+    <input type="email" asp-for="Email" />
+    <span asp-validation-for="Email"></span>
     <br />
-    <label>Dietary Requirements: </label>
+    <label asp-for="Message">Dietary Requirements: </label>
     <br />
-    <textarea rows="4" name="message"></textarea>
+    <textarea rows="4" asp-for="Message"></textarea>
+    <span asp-validation-for="Message"></span>
     <br />
     <input type="submit" value="SEND RSVP" />
 </form>
-
-
-
