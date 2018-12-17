@@ -28,6 +28,8 @@ namespace InvitationV2.Controllers
             if (ModelState.IsValid)
             {
                 _mailService.SendMessage("melodiejosartist@gmail.com", $"From: {model.Name} - {model.Email}, Message: {model.Message}");
+                ViewBag.UserMessage = "RSVP Sent";
+                ModelState.Clear(); //clears the form
             }
 
             return View();

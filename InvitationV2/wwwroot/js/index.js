@@ -53,6 +53,4 @@
             document.getElementById("all").innerHTML = "We're married!";
         }
     }, 1000);
-
- 
 });

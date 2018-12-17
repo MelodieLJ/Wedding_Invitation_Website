@@ -1,7 +1,4 @@
 ﻿@model IndexViewModel
-{
-    ViewBag.Title = "The Wedding of Artem and Melodie";
-}
 
 <br />
 <div class="title">The Honour of your Presence is Requested at</div>
@@ -134,4 +131,5 @@
     <span asp-validation-for="Message"></span>
     <br />
     <input type="submit" value="SEND RSVP" />
+    <div>@ViewBag.UserMessage</div>
 </form>
