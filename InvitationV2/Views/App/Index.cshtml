@@ -110,26 +110,47 @@
 
 <!--RSVP Form-->
 @section Scripts {
-<script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
 }
-<form method="post">
-    <div asp-validation-summary="ModelOnly"></div>
-    <label asp-for="Name">Names of those attending: </label>
-    <br />
-    <input asp-for="Name" />
-    <span asp-validation-for="Name"></span>
-    <br />
-    <label asp-for="Email">Email: </label>
-    <br />
-    <input type="email" asp-for="Email" />
-    <span asp-validation-for="Email"></span>
-    <br />
-    <label asp-for="Message">Dietary Requirements: </label>
-    <br />
-    <textarea rows="4" asp-for="Message"></textarea>
-    <span asp-validation-for="Message"></span>
-    <br />
-    <input type="submit" value="SEND RSVP" />
-    <div>@ViewBag.UserMessage</div>
-</form>
+    <div class="WishingWell">
+        <div>
+            <form method="post">
+                <div asp-validation-summary="ModelOnly"></div>
+                <label asp-for="Name">Names of those attending: </label>
+                <br />
+                <input asp-for="Name" />
+                <span asp-validation-for="Name"></span>
+                <br />
+                <label asp-for="Email">Email: </label>
+                <br />
+                <input type="email" asp-for="Email" />
+                <span asp-validation-for="Email"></span>
+                <br />
+                <label asp-for="Message">Dietary Requirements: </label>
+                <br />
+                <textarea rows="4" asp-for="Message"></textarea>
+                <span asp-validation-for="Message"></span>
+                <br />
+                <input type="submit" value="SEND RSVP" />
+                <div>@ViewBag.UserMessage</div>
+            </form>
+        </div>        
+        <div>
+            Thank you for sharing our very special day.
+            <br />
+            If you so desire, help us on our way
+            <br />
+            To a honeymoon away for a two-week spell...
+            <br />
+            With a gift of cash to wish us well.
+        </div>
+        <div>
+            Thank you for sharing our very special day.
+            If you so desire, help us on our way
+            To a honeymoon for a two-week spell...
+            With a gift of cash to wish us well.
+        </div>
+    </div>
+
+
