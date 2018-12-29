@@ -1,8 +1,5 @@
 ﻿$(document).ready(function () {
 
-    var theForm = $("#theForm");
-    //theForm.hide();
-
     var $OurStory = $(".OurStory");
     var $Quote = $(".Quote");
     var $Story = $(".Story");
@@ -16,12 +13,10 @@
     //    $Story.toggle(1000);
     //});
 
-   
-
-    $SecondRow.hide();
-    $FirstRow.on("click", function () {
-        $SecondRow.slideToggle(300);
-    });
+    //$SecondRow.hide();
+    //$FirstRow.on("click", function () {
+    //    $SecondRow.slideToggle(300);
+    //});
 
 
     // Set the date we're counting down to

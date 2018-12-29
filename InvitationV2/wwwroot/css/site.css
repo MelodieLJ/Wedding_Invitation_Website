@@ -233,17 +233,24 @@ label {
     flex-direction: row;
     align-content: center;
     margin-left: 25px;
+    margin-right: 20px;
 }
 
     .WishingWell > div {
-        justify-content: space-between;
-        
+        justify-content: space-between;       
         height: 33%;
         width: 33%;
     }
-    .WishingWell > div:nth-of-type(2) {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Harry P';
-        font-size: 2.25vw;
-    }
+        .WishingWell > div:nth-of-type(2) {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Palatino Linotype';
+            font-size: 2.25vw;
+        }
+
+        .WishingWell > div:nth-of-type(3) {
+            padding-left: 20px;
+            font-family: 'Palatino Linotype';
+            font-size: 1.75vw;
+            color: goldenrod;
+        }
