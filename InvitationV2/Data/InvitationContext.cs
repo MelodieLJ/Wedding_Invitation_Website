@@ -10,6 +10,10 @@ namespace InvitationV2.Data
     //DbContext knows how to execute queries to a datastore
     public class InvitationContext : DbContext
     {
+
+        public InvitationContext(DbContextOptions<InvitationContext> options) :base(options)
+        {
+        }
         public DbSet<RSVP> RSVPs { get; set; }
     }
 }

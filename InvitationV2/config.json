@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "InvitationConnectionString" : "server=(localdb)\\projectsV13;Database=InvitationDb;Integrated Security=true;MultipleActiveResultSets=true;"
+  }
+}
