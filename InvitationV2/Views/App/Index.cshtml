@@ -1,4 +1,4 @@
-﻿@model IndexViewModel
+﻿@model RSVP
 
 <br />
 <div class="title">The Honour of your Presence is Requested at</div>
@@ -122,15 +122,15 @@
                 <input asp-for="Name" />
                 <span asp-validation-for="Name"></span>
                 <br />
-                <label asp-for="Email">Email: </label>
+                @*<label asp-for="Email">Email: </label>
                 <br />
                 <input type="email" asp-for="Email" />
-                <span asp-validation-for="Email"></span>
+                <span asp-validation-for="Email"></span>*@
+                @*<br />*@
+                <label asp-for="DietReq">Dietary Requirements: </label>
                 <br />
-                <label asp-for="Message">Dietary Requirements: </label>
-                <br />
-                <textarea rows="4" asp-for="Message"></textarea>
-                <span asp-validation-for="Message"></span>
+                <textarea rows="4" asp-for="DietReq"></textarea>
+                <span asp-validation-for="DietReq"></span>
                 <br />
                 <input type="submit" value="SEND RSVP" />
                 <div>@ViewBag.UserMessage</div>
