@@ -15,11 +15,9 @@ namespace InvitationV2.Controllers
     public class AppController : Controller
     {
         private readonly IMailService _mailService;
-        private readonly InvitationContext _context;
 
-        public AppController(IMailService mailService, InvitationContext context)
+        public AppController(IMailService mailService)
         {
-            _context = context;
             _mailService = mailService;
         }
         public IActionResult Index()
@@ -44,11 +42,11 @@ namespace InvitationV2.Controllers
             return View();
         }
 
-        public void AddData(RSVP data)
-        {
-            _context.Add(data);
-            _context.SaveChanges();
-        }
+        //public void AddData(RSVP data)
+        //{
+        //    _context.Add(data);
+        //    _context.SaveChanges();
+        //}
 
         public void SendEmail(RSVP model)
         {

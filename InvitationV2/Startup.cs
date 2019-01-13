@@ -27,10 +27,10 @@ namespace InvitationV2
         public void ConfigureServices(IServiceCollection services)
         {
             //makes the DbContext part of the Service collection
-            services.AddDbContext<InvitationContext>(cfg =>
-            {
-                cfg.UseSqlServer(_config.GetConnectionString("InvitationConnectionString"));
-            }); 
+            //services.AddDbContext<InvitationContext>(cfg =>
+            //{
+            //    cfg.UseSqlServer(_config.GetConnectionString("InvitationConnectionString"));
+            //}); 
 
             services.AddTransient<IMailService, NullMailService>();
             //support for real mail service
