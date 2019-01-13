@@ -99,7 +99,7 @@ section.counter {
     background-position: center center;
     background-size: cover;
     min-height: 300px;
-   
+ 
 }
 
     section.counter h1 {
@@ -111,7 +111,7 @@ section.counter {
         transform: translate(-50%, -50%);
         width: 90%;
         font-size: 3vw;
-        padding: 10px;
+        margin-top: 5px;
     }
 
     section.counter h5 {
