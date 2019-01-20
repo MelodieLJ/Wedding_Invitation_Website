@@ -1,4 +1,9 @@
-﻿.title {
+﻿@font-face {
+    font-family: 'Harry P';
+    src: url('../fonts/HARRYP_.TTF');
+}
+
+.title {
     display: flex;
     justify-content: center;
     color: goldenrod;
@@ -118,7 +123,7 @@ section.counter {
         font-family: 'Harry P';
         position: absolute;
         color: gold;
-        bottom: -50%;
+        bottom: -60%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 3vw;
